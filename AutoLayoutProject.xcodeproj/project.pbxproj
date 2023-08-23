@@ -13,6 +13,11 @@
 		3F0EED3F2A949852008B508A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F0EED3D2A949852008B508A /* Main.storyboard */; };
 		3F0EED412A949853008B508A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F0EED402A949853008B508A /* Assets.xcassets */; };
 		3F0EED442A949853008B508A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F0EED422A949853008B508A /* LaunchScreen.storyboard */; };
+		3F0EED4D2A9498A9008B508A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3F0EED4C2A9498A9008B508A /* SnapKit */; };
+		3F0EED4F2A94A302008B508A /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0EED4E2A94A302008B508A /* DiaryViewController.swift */; };
+		3F0EED512A94A68A008B508A /* KakaoTalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0EED502A94A68A008B508A /* KakaoTalkViewController.swift */; };
+		3F0EED532A962F36008B508A /* FindCinemaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0EED522A962F36008B508A /* FindCinemaViewController.swift */; };
+		3F0EED562A96577B008B508A /* TheaterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0EED552A96577B008B508A /* TheaterInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,10 @@
 		3F0EED402A949853008B508A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F0EED432A949853008B508A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F0EED452A949853008B508A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F0EED4E2A94A302008B508A /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
+		3F0EED502A94A68A008B508A /* KakaoTalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoTalkViewController.swift; sourceTree = "<group>"; };
+		3F0EED522A962F36008B508A /* FindCinemaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindCinemaViewController.swift; sourceTree = "<group>"; };
+		3F0EED552A96577B008B508A /* TheaterInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheaterInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F0EED4D2A9498A9008B508A /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +66,27 @@
 		3F0EED362A949852008B508A /* AutoLayoutProject */ = {
 			isa = PBXGroup;
 			children = (
+				3F0EED542A9635ED008B508A /* TabBarViewControllers */,
+				3F0EED3B2A949852008B508A /* ViewController.swift */,
 				3F0EED372A949852008B508A /* AppDelegate.swift */,
 				3F0EED392A949852008B508A /* SceneDelegate.swift */,
-				3F0EED3B2A949852008B508A /* ViewController.swift */,
 				3F0EED3D2A949852008B508A /* Main.storyboard */,
 				3F0EED402A949853008B508A /* Assets.xcassets */,
 				3F0EED422A949853008B508A /* LaunchScreen.storyboard */,
 				3F0EED452A949853008B508A /* Info.plist */,
+				3F0EED552A96577B008B508A /* TheaterInfo.swift */,
 			);
 			path = AutoLayoutProject;
+			sourceTree = "<group>";
+		};
+		3F0EED542A9635ED008B508A /* TabBarViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3F0EED4E2A94A302008B508A /* DiaryViewController.swift */,
+				3F0EED502A94A68A008B508A /* KakaoTalkViewController.swift */,
+				3F0EED522A962F36008B508A /* FindCinemaViewController.swift */,
+			);
+			path = TabBarViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +105,9 @@
 			dependencies = (
 			);
 			name = AutoLayoutProject;
+			packageProductDependencies = (
+				3F0EED4C2A9498A9008B508A /* SnapKit */,
+			);
 			productName = AutoLayoutProject;
 			productReference = 3F0EED342A949852008B508A /* AutoLayoutProject.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +136,9 @@
 				Base,
 			);
 			mainGroup = 3F0EED2B2A949852008B508A;
+			packageReferences = (
+				3F0EED4B2A9498A9008B508A /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 3F0EED352A949852008B508A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +166,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F0EED512A94A68A008B508A /* KakaoTalkViewController.swift in Sources */,
+				3F0EED4F2A94A302008B508A /* DiaryViewController.swift in Sources */,
+				3F0EED532A962F36008B508A /* FindCinemaViewController.swift in Sources */,
 				3F0EED3C2A949852008B508A /* ViewController.swift in Sources */,
+				3F0EED562A96577B008B508A /* TheaterInfo.swift in Sources */,
 				3F0EED382A949852008B508A /* AppDelegate.swift in Sources */,
 				3F0EED3A2A949852008B508A /* SceneDelegate.swift in Sources */,
 			);
@@ -295,6 +327,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +335,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hany.AutoLayoutProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -323,6 +359,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +367,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hany.AutoLayoutProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -358,6 +398,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3F0EED4B2A9498A9008B508A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3F0EED4C2A9498A9008B508A /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F0EED4B2A9498A9008B508A /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3F0EED2C2A949852008B508A /* Project object */;
 }
